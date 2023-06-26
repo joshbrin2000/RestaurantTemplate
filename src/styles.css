@@ -14,6 +14,32 @@ body {
 .head-cont{
     display: flex;
     justify-content: center;
-    padding: 10px 0px;
+    padding: 1vh 0vw;
+    background-color: wheat;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.menu{
+    background-color: rgb(245, 222, 179, 0.7);
+    height: 70vh;
+    width: 75vw;
+    font-size: 100px;
+}
+
+.foot-cont{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    padding: 1vh 0vw;
     background-color: wheat;
 }
