@@ -45,7 +45,7 @@ body {
 }
 
 .review-note{
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .review-author{
@@ -53,6 +53,19 @@ body {
     font-style: italic;
     padding-left: 40px;
     padding-bottom: 10px;
+}
+
+.menu-item-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minimax(150px, 1fr));
+}
+
+.menu-item-cont > div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 
 .foot-cont{
