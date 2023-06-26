@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(masimo-grabar-NzHRSLhc6Cs-unsplash.png);
+    background-size: contain;
+    height: 100vh;
+}
+
+.head-cont{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: wheat;
+}
