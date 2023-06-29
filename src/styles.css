@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: fit-content;
 }
 
 .menu{
@@ -85,6 +85,17 @@ body {
 }
 
 .menu-item.sect1 > img{
+    height: fit-content;
+}
+
+.menu-item.sect7{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-item.sect7 > div{
+    display: inline-block;
+    text-align: left;
     height: fit-content;
 }
 
