@@ -61,11 +61,16 @@ body {
     grid-template-rows: repeat(auto-fit, minimax(150px, 1fr));
 }
 
-.menu-item-cont > div{
+.menu-item-cont > .menu-item{
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: center;
+}
+
+.menu-item > img{
+    height: 100px;
+    width: 100px;
 }
 
 .foot-cont{

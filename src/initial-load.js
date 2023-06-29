@@ -1,3 +1,5 @@
+import menuSection from './menu-items-load';
+
 function headerLoad() {
     const contentId = document.getElementById('content');
 
@@ -22,22 +24,6 @@ function footerLoad() {
     
     footEl.appendChild(credit);
     contentId.appendChild(footEl);
-}
-
-function menuSection(el) {
-    const menuHead = document.createElement('h2');
-    menuHead.textContent = 'Menu';
-
-    const menuItemGrid = document.createElement('div');
-    menuItemGrid.className = 'menu-item-cont';
-    for (let i=1; i<11; i++){
-        let newDiv = document.createElement('div');
-        newDiv.textContent = i;
-        menuItemGrid.appendChild(newDiv);
-    }
-
-    el.appendChild(menuHead);
-    el.appendChild(menuItemGrid);
 }
 
 function mainLoad() {
