@@ -20,6 +20,7 @@ body {
     justify-content: center;
     padding: 1vh 0vw;
     background-color: wheat;
+    margin-bottom: 5vh;
 }
 
 .main{
@@ -36,6 +37,7 @@ body {
     width: 75vw;
     font-size: 25px;
     padding: 15px;
+    margin-bottom: 10vh;
 }
 
 .menu h2{
@@ -63,16 +65,18 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto-fit, minimax(150px, 1fr));
+    column-gap: 5vw;
+    row-gap: 5vh;
 }
 
 .menu-item{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
     width: 100%;
     text-align: center;
-    border: 2px solid red;
+    /*border: 2px solid red;*/ 
 }
 
 .menu-item > img{ 
@@ -88,12 +92,12 @@ body {
     height: fit-content;
 }
 
-.menu-item.sect7{
+.menu-item.sect7, .menu-item.sect8{
     display: flex;
     justify-content: flex-start;
 }
 
-.menu-item.sect7 > div{
+.menu-item.sect7 > div, .menu-item.sect8 > div{
     display: inline-block;
     text-align: left;
     height: fit-content;
@@ -105,7 +109,7 @@ body {
     justify-content: space-evenly;
     gap: 2px;
     padding: 8px;
-    width: auto;
+    width: 66%;
     height: 10vh;
 }
 

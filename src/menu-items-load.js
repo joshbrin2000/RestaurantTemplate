@@ -43,7 +43,7 @@ function descriptDiv(el, i) {
             descDiv.innerHTML = '<h3>Sides</h3><br /><p>Fries: $2.99</p><p>Garden Salad: $3.49</p><p>Onion Rings (old): $2.99</p><p>Onion Rings (fresh): $4.49</p>';
             break;
         case 8:
-
+            descDiv.innerHTML = '<h3>Drinks</h3><br /><p>Water: $0.99</p><p>Diet Soda: $2.99</p><p>Soda: $3.49</p><p>Milkshake: $4.99</p>'
             break;
         default:
             break;
