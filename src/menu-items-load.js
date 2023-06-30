@@ -5,28 +5,8 @@ import Chicken from './images/chicken-tenders.jpg';
 import Mozza from './images/mozzarella-sticks.jpg';
 import Pepperoni from './images/pepperoni-pizza.jpg';
 
-export default function menuSection(el) {
-    const menuHead = document.createElement('h2');
-    menuHead.textContent = 'Menu';
-
-    const menuItemGrid = document.createElement('div');
-    menuItemGrid.className = 'menu-item-cont';
-    for (let i=1; i<9; i++) {
-        let newDiv = document.createElement('div');
-        newDiv.className = 'menu-item sect' + i;
-        descriptDiv(newDiv, i);
-        if (i < 7){
-            pictureLoad(newDiv, i);
-        }
-        menuItemGrid.appendChild(newDiv);
-    }
-
-    el.appendChild(menuHead);
-    el.appendChild(menuItemGrid);
-}
-
 function descriptDiv(el, i) {
-    let descDiv = document.createElement('div');
+    const descDiv = document.createElement('div');
     switch (i) {
         case 1:
             descDiv.innerHTML = '<p>Pepperoni Pizza - hand-made with care</p><p>Price: $15.99</p>';
@@ -59,7 +39,7 @@ function descriptDiv(el, i) {
 }
 
 function pictureLoad(el, i) {
-    let image = new Image();
+    const image = new Image();
     switch (i) {
         case 1:
             image.src = Pepperoni;
@@ -83,4 +63,24 @@ function pictureLoad(el, i) {
             break;
     }
     el.appendChild(image);
+}
+
+export default function menuSection(el) {
+    const menuHead = document.createElement('h2');
+    menuHead.textContent = 'Menu';
+
+    const menuItemGrid = document.createElement('div');
+    menuItemGrid.className = 'menu-item-cont';
+    for (let i=1; i<9; i += 1) {
+        const newDiv = document.createElement('div');
+        newDiv.className = `menu-item sect${  i}`;
+        descriptDiv(newDiv, i);
+        if (i < 7){
+            pictureLoad(newDiv, i);
+        }
+        menuItemGrid.appendChild(newDiv);
+    }
+
+    el.appendChild(menuHead);
+    el.appendChild(menuItemGrid);
 }
