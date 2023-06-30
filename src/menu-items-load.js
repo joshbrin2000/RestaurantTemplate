@@ -1,3 +1,5 @@
+import Caesar from './images/ceaser-salad.jpg'
+
 export default function menuSection(el) {
     const menuHead = document.createElement('h2');
     menuHead.textContent = 'Menu';
@@ -55,22 +57,22 @@ function pictureLoad(el, i) {
     let image = new Image();
     switch (i) {
         case 1:
-            image.src = '../src/images/pepperoni-pizza.jpg';
+            image.src = './images/pepperoni-pizza.jpg';
             break;
         case 2:
-            image.src = '../src/images/cheese-pizza.jpg';
+            image.src = './images/cheese-pizza.jpg';
             break;
         case 3:
-            image.src = '../src/images/cheeseburger.jpg';
+            image.src = './images/cheeseburger.jpg';
             break;
         case 4:
-            image.src = '../src/images/chicken-tenders.jpg';
+            image.src = './images/chicken-tenders.jpg';
             break;
         case 5:
-            image.src = '../src/images/mozzarella-sticks.jpg';
+            image.src = './images/mozzarella-sticks.jpg';
             break;
         case 6:
-            image.src = '../src/images/ceaser-salad.jpg';
+            image.src = Caesar;
             break;
         default:
             break;
